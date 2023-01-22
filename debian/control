@@ -5,11 +5,11 @@ Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Build-Depends:
  debhelper-compat (= 12),
  quilt,
- xutils-dev (>= 1:7.6+2),
+ xutils-dev,
  pkg-config,
 # specs:
  xmlto,
- xorg-sgml-doctools (>= 1:1.8),
+ xorg-sgml-doctools,
  w3m,
  xsltproc,
 Standards-Version: 4.5.0
@@ -21,26 +21,8 @@ Package: x11proto-dev
 Architecture: all
 Depends:
  ${misc:Depends},
- xorg-sgml-doctools (>= 1:1.5),
+ xorg-sgml-doctools,
 Multi-Arch: foreign
-Breaks:
- x11proto-core-dev (<< 2018.3),
- x11proto-dri2-dev (<< 2018.3),
- x11proto-fonts-dev (<< 2018.3),
- x11proto-gl-dev (<< 2018.3),
- x11proto-input-dev (<< 2018.3),
- x11proto-kb-dev (<< 2018.3),
- x11proto-present-dev (<< 2018.3),
- x11proto-randr-dev (<< 2018.3),
- x11proto-record-dev (<< 2018.3),
- x11proto-render-dev (<< 2:2018.3),
- x11proto-scrnsaver-dev (<< 2018.3),
- x11proto-video-dev (<< 2018.3),
- x11proto-xext-dev (<< 2018.3),
- x11proto-xf86dga-dev (<< 2018.3),
- x11proto-xf86dri-dev (<< 2018.3),
- x11proto-xf86vidmode-dev (<< 2018.3),
- x11proto-xinerama-dev (<< 2018.3),
 Provides:
  x11proto-core-dev (= ${binary:Version}),
  x11proto-dri2-dev (= ${binary:Version}),
@@ -59,24 +41,6 @@ Provides:
  x11proto-xf86dri-dev (= ${binary:Version}),
  x11proto-xf86vidmode-dev (= ${binary:Version}),
  x11proto-xinerama-dev (= ${binary:Version}),
-Replaces:
- x11proto-core-dev (<< 2018.3),
- x11proto-dri2-dev (<< 2018.3),
- x11proto-fonts-dev (<< 2018.3),
- x11proto-gl-dev (<< 2018.3),
- x11proto-input-dev (<< 2018.3),
- x11proto-kb-dev (<< 2018.3),
- x11proto-present-dev (<< 2018.3),
- x11proto-randr-dev (<< 2018.3),
- x11proto-record-dev (<< 2018.3),
- x11proto-render-dev (<< 2:2018.3),
- x11proto-scrnsaver-dev (<< 2018.3),
- x11proto-video-dev (<< 2018.3),
- x11proto-xext-dev (<< 2018.3),
- x11proto-xf86dga-dev (<< 2018.3),
- x11proto-xf86dri-dev (<< 2018.3),
- x11proto-xf86vidmode-dev (<< 2018.3),
- x11proto-xinerama-dev (<< 2018.3),
 Description: X11 extension protocols and auxiliary headers
  This package provides development headers describing the wire protocol
  for the X11 core and extension protocols, and also provides a number of
