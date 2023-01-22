@@ -1,3 +1,81 @@
+xorgproto (2022.1-2) UNRELEASED; urgency=medium
+
+  * Remove constraints unnecessary since buster (oldstable):
+    + Build-Depends: Drop versioned constraint on xutils-dev (>= 1:7.6+2).
+    + Build-Depends: Drop versioned constraint on xorg-sgml-doctools (>= 1:1.8).
+    + x11proto-dev: Drop versioned constraint on xorg-sgml-doctools (>= 1:1.5)
+      in Depends.
+    + x11proto-dev: Drop conflict with removed package x11proto-core-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-dri2-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-fonts-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-gl-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-input-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-kb-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-present-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-randr-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-record-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-render-dev (<<
+      2:2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-scrnsaver-dev
+      (<< 2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-video-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-xext-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-xf86dga-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-xf86dri-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-xf86vidmode-dev
+      (<< 2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-xinerama-dev (<<
+      2018.3) in Replaces.
+    + x11proto-dev: Drop conflict with removed package x11proto-core-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-dri2-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-fonts-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-gl-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-input-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-kb-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-present-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-randr-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-record-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-render-dev (<<
+      2:2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-scrnsaver-dev
+      (<< 2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-video-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-xext-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-xf86dga-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-xf86dri-dev (<<
+      2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-xf86vidmode-dev
+      (<< 2018.3) in Breaks.
+    + x11proto-dev: Drop conflict with removed package x11proto-xinerama-dev (<<
+      2018.3) in Breaks.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Sun, 22 Jan 2023 21:02:47 -0000
+
 xorgproto (2022.1-1) unstable; urgency=medium
 
   * New upstream release.
