@@ -1,3 +1,12 @@
+xorgproto (2024.1-1~bpo+1) unstable; urgency=medium
+
+  * debian: Set source format to 3.0 (quilt)
+  * Re-import upstream 2024.1 tarball (tarball contents changed)
+  * Merge upstream signing key blocks into single keyring
+  * Backport to Debian 12 (bookworm) and Ubuntu 24.04 (noble)
+
+ -- apebl <a@pebl.cc>  Tue, 19 Aug 2025 11:54:22 +0000
+
 xorgproto (2024.1-1) unstable; urgency=medium
 
   * New upstream release.
